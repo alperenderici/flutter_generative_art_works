@@ -1,0 +1,2 @@
+# flutter_generative_art_works
+Trainings
