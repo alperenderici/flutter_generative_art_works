@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:quest1/canvas.dart';
-import 'package:quest1/particle.dart';
+import 'package:quest1/work-1/canvas.dart';
 import 'dart:math';
+
+import 'package:quest1/work-1/particle.dart';
 
 class MyPainter extends StatefulWidget {
   MyPainter({Key? key}) : super(key: key);

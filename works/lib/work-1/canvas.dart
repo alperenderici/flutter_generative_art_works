@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:quest1/particle.dart';
 import 'dart:math';
+
+import 'package:quest1/work-1/particle.dart';
 
 Offset polarToCartesian(double speed, double theta) {
   return Offset(speed * cos(theta), speed * sin(theta));
@@ -11,8 +12,6 @@ class MyCanvas extends CustomPainter {
   double animValue;
   List<MyParticle> particles;
   MyCanvas(this.rgn, this.particles, this.animValue);
-
-  
 
   @override
   void paint(Canvas canvas, Size size) {

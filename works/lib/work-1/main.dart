@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quest1/painter.dart';
+import 'package:quest1/work-1/painter.dart';
 
 void main() {
   runApp(const MyApp());
