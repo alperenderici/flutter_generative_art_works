@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: CircleGenerativeArt(),
     ),
   );
@@ -49,7 +50,7 @@ class _CircleGenerativeArtState extends State<CircleGenerativeArt> {
             getSize(random);
           });
         },
-        child: Icon(Icons.refresh),
+        child: const Icon(Icons.refresh),
       ),
     );
   }

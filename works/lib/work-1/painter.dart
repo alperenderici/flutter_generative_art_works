@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:quest1/work-1/canvas.dart';
 import 'dart:math';
-
 import 'package:quest1/work-1/particle.dart';
 
 class MyPainter extends StatefulWidget {
-  MyPainter({Key? key}) : super(key: key);
+  const MyPainter({Key? key}) : super(key: key);
 
   @override
   State<MyPainter> createState() => _MyPainter();
@@ -34,7 +33,7 @@ class _MyPainter extends State<MyPainter> with SingleTickerProviderStateMixin {
     super.initState();
 
     controller =
-        AnimationController(duration: Duration(seconds: 10), vsync: this);
+        AnimationController(duration: const Duration(seconds: 10), vsync: this);
 
     animation = Tween<double>(begin: 0, end: 300).animate(controller)
       ..addListener(() {
@@ -50,13 +49,13 @@ class _MyPainter extends State<MyPainter> with SingleTickerProviderStateMixin {
     controller.forward();
     this.particles = List.generate(100, (index) {
       var p = MyParticle(
-          position: Offset(-1, -1),
+          position: const Offset(-1, -1),
           color: getRandomColor(rgn),
           speed: rgn.nextDouble() * maxSpeed,
           theta: rgn.nextDouble() * maxTheta,
           radius: rgn.nextDouble() * maxRadius);
       p.color = getRandomColor(rgn);
-      p.position = Offset(-1, -1);
+      p.position = const Offset(-1, -1);
       p.speed = rgn.nextDouble() * maxSpeed;
       p.theta = rgn.nextDouble() * maxTheta;
       p.radius = rgn.nextDouble() * maxRadius;
